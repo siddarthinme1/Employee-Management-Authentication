@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/siddarthinme1/Employee-Management-Authentication/tree/master/static/css/main.e6c13ad2.css",
+    "main.js": "/siddarthinme1/Employee-Management-Authentication/tree/master/static/js/main.d2938291.js",
+    "index.html": "/siddarthinme1/Employee-Management-Authentication/tree/master/index.html",
+    "main.e6c13ad2.css.map": "/siddarthinme1/Employee-Management-Authentication/tree/master/static/css/main.e6c13ad2.css.map",
+    "main.d2938291.js.map": "/siddarthinme1/Employee-Management-Authentication/tree/master/static/js/main.d2938291.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.d2938291.js"
+  ]
+}
