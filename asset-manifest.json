@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/siddarthinme1/Employee-Management-Authentication/static/css/main.e6c13ad2.css",
-    "main.js": "/siddarthinme1/Employee-Management-Authentication/static/js/main.d2938291.js",
+    "main.js": "/siddarthinme1/Employee-Management-Authentication/static/js/main.aaa4ad95.js",
     "index.html": "/siddarthinme1/Employee-Management-Authentication/index.html",
     "main.e6c13ad2.css.map": "/siddarthinme1/Employee-Management-Authentication/static/css/main.e6c13ad2.css.map",
-    "main.d2938291.js.map": "/siddarthinme1/Employee-Management-Authentication/static/js/main.d2938291.js.map"
+    "main.aaa4ad95.js.map": "/siddarthinme1/Employee-Management-Authentication/static/js/main.aaa4ad95.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.d2938291.js"
+    "static/js/main.aaa4ad95.js"
   ]
 }
