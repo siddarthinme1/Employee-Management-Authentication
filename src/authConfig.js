@@ -16,7 +16,8 @@ export const msalConfig = {
     clientId: "0a5ec7e9-56b1-40dc-b4b5-fe8e3b7502da", // This is the ONLY mandatory field that you need to supply.
     authority:
       "https://login.microsoftonline.com/0981c0bd-855b-4bfc-84ba-748ac68230f8", // Replace the placeholder with your tenant subdomain
-    redirectUri: "/", // Points to window.location.origin. You must register this URI on Azure Portal/App Registration.
+    redirectUri:
+      "https://github.com/siddarthinme1/Employee-Management-Authentication", // Points to window.location.origin. You must register this URI on Azure Portal/App Registration.
     postLogoutRedirectUri: "/", // Indicates the page to navigate after logout.
     navigateToLoginRequestUrl: false, // If "true", will navigate back to the original request location before processing the auth code response.
   },

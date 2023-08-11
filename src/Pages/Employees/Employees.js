@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   Paper,
   TableBody,
@@ -13,8 +13,6 @@ import {
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import EmployeeForm from "./EmployeeForm";
-import PageHeader from "../../Components/PageHeader";
-import PeopleIcon from "@mui/icons-material/People";
 import Control from "../../Controls/Control";
 import AddIcon from "@mui/icons-material/Add";
 import SearchIcon from "@mui/icons-material/Search";
@@ -26,7 +24,6 @@ import ClearAllIcon from "@mui/icons-material/ClearAll";
 import useEmployeeServices from "../../Services/EmployeeService";
 import CustomAlert from "../../Components/CustomAlert";
 import Snackbar from "@mui/material/Snackbar";
-import { Box } from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
   searchInput: {
@@ -187,7 +184,9 @@ function Employees() {
                   onChange={handleSearch}
                 />
               </Grid>
-              <Grid item sm></Grid>
+              <Grid item sm>
+                {" "}
+              </Grid>
               <Grid item>
                 <Control.Button
                   fullwidth="true"
