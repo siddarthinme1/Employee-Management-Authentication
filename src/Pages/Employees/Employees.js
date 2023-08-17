@@ -10,6 +10,8 @@ import {
   FormControlLabel,
   Alert,
   Grid,
+  Tooltip,
+  Button,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import EmployeeForm from "./EmployeeForm";
@@ -188,34 +190,40 @@ function Employees() {
                 {" "}
               </Grid>
               <Grid item>
-                <Control.Button
-                  fullwidth="true"
-                  className={classes.addButton}
-                  text="Add new"
-                  color="primary"
-                  startIcon={<AddIcon />}
-                  onClick={() => {
-                    setOpenPopup(true);
-                    setRecordForEdit(null);
-                  }}
-                />
+                <Tooltip title="Add Employee">
+                  <Control.Button
+                    fullwidth="true"
+                    className={classes.addButton}
+                    text="Add"
+                    color="primary"
+                    startIcon={<AddIcon />}
+                    onClick={() => {
+                      setOpenPopup(true);
+                      setRecordForEdit(null);
+                    }}
+                  />
+                </Tooltip>
               </Grid>
               <Grid item>
-                <FormControlLabel
-                  control={
-                    <Switch
-                      className={classes.binSwitch}
-                      onChange={() => setBin(bin === true ? false : true)}
-                    />
-                  }
-                  labelPlacement="end"
-                  label="Bin"
-                />
+                <Tooltip title="Recycle Bin">
+                  <FormControlLabel
+                    control={
+                      <Switch
+                        className={classes.binSwitch}
+                        onChange={() => setBin(bin === true ? false : true)}
+                      />
+                    }
+                    labelPlacement="end"
+                    label="Bin"
+                  />
+                </Tooltip>
               </Grid>
               <Grid item xs={1}>
                 {bin === true ? (
                   <Control.ActionButton>
-                    <ClearAllIcon onClick={() => handleEmptyRecycleBin()} />
+                    <Tooltip title="Delete All Employees">
+                      <ClearAllIcon onClick={() => handleEmptyRecycleBin()} />
+                    </Tooltip>
                   </Control.ActionButton>
                 ) : null}
               </Grid>
@@ -265,17 +273,21 @@ function Employees() {
                     {bin === false ? (
                       <TableCell>
                         <Control.ActionButton>
-                          <DeleteForeverIcon
-                            onClick={() => handleDelete(employee.id)}
-                          />
+                          <Tooltip title="Delete Employee">
+                            <DeleteForeverIcon
+                              onClick={() => handleDelete(employee.id)}
+                            />
+                          </Tooltip>
                         </Control.ActionButton>
                       </TableCell>
                     ) : (
                       <TableCell>
                         <Control.ActionButton>
-                          <RestoreIcon
-                            onClick={() => handleRestore(employee.id)}
-                          />
+                          <Tooltip title="Restore Employee">
+                            <RestoreIcon
+                              onClick={() => handleRestore(employee.id)}
+                            />
+                          </Tooltip>
                         </Control.ActionButton>
                       </TableCell>
                     )}

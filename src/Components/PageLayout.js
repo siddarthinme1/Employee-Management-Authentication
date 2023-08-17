@@ -3,10 +3,12 @@ import { NavigationBar } from "./NavigationBar";
 import { Link } from "@mui/material";
 import PageHeader from "./PageHeader";
 import PeopleIcon from "@mui/icons-material/People";
+import FullWidthTabs from "./TestTabs";
 
 export const PageLayout = (props) => {
   return (
     <>
+      <FullWidthTabs />
       <NavigationBar />
       <AuthenticatedTemplate>
         <PageHeader

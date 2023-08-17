@@ -10,11 +10,14 @@ import {
   Grid,
   InputBase,
   Link,
+  Tab,
+  Tabs,
   Toolbar,
   Typography,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import SearchIcon from "@mui/icons-material/Search";
+import FullWidthTabs from "./TestTabs";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -56,7 +59,7 @@ export const NavigationBar = () => {
             <Grid item>
               <Link href="/">
                 <Typography variant="h5" component="h2" sx={{ color: "white" }}>
-                  S&K Technology Services
+                  L&T Technology Services
                 </Typography>
               </Link>
             </Grid>
