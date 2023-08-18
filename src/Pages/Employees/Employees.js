@@ -77,8 +77,8 @@ function Employees() {
   const [showEmptyBinAlert, setShowEmptyBinAlert] = useState(false);
   const [itemIdToRestore, setItemIdToRestore] = useState(null);
   const [open, setOpen] = useState(false);
-  const employees = useAllEmployees([]);
-  const deletedEmployees = useBinEmployees([]);
+  const employees = useAllEmployees();
+  const deletedEmployees = useBinEmployees();
 
   const [filterFn, setFilterFn] = useState({
     fn: (items) => {
